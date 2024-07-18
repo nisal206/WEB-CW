@@ -1,0 +1,171 @@
+.background {
+    min-height: 100vh; /* Ensure the background takes up the full viewport height */
+    background-image: url('./Pictures/feedback_background.jpg'); /* Add your background image here */
+    background-size: cover;/* Ensure the background image covers the entire element */
+    background-position: center;/* Center the background image */
+    background-repeat: no-repeat;/* Prevent the background image from repeating */
+    background-attachment: fixed; /* Ensure the background stays fixed when scrolling */
+    display: flex; /* Enable flexbox layout for the background */
+    flex-direction: column;
+}
+
+.fcontent {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #dbd6d6c4; /* Solid background color for the form container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+    border-radius: 8px;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    background-color: #dbd6d6c4;/* Solid background color for the form */
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+h1,h2 {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+label {
+    display: block;
+    margin: 20px 0 5px;
+    font-weight: bold;
+}
+
+select, input[type="text"], input[type="email"], input[type="radio"], textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"]{
+    width: 70px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.age{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.age label {
+    margin-top: -3px;
+    margin-right: 10px;
+    margin-bottom: 0; /* Remove bottom margin to align properly */
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+    font-style: italic;
+    color: #9999997e;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    font-weight: normal;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100px; /* Set the desired width */
+    background-color: #116a99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Align text to the left */
+}
+
+button:hover {
+    background-color: #0f5378;
+}
+
+.popup {  /* Popup styles */
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000; /* Ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Black background with transparency */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    background-color: #dbd6d67c;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+    border-radius: 8px;
+}
+
+.popup-content button {
+    margin-top: 20px;
+    background-color: #116a99;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #0f5378;
+}
+
+.preview-section {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #dbd6d6ec;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.747);
+    border-radius: 8px;
+    overflow-x: hidden;
+    word-wrap: break-word; /* Allows long words to be broken and wrap onto the next line */
+    overflow-wrap: break-word; /* Ensures the overflow content breaks to the next line */
+    white-space: normal; /* Normal handling of white space */
+    margin-bottom: 7%;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.popup-content {
+    text-align: center;
+}
